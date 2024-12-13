@@ -1,0 +1,148 @@
+.barra_nav {
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+    display: flex; /* Hace que los elementos se muestren en línea (horizontalmente) */
+    justify-content: space-around; /* Distribuye uniformemente los elementos a lo largo de la barra de navegación */
+  }
+
+  header{
+    background-color: brown;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  footer{
+    background-color: brown;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .footer_content{
+    padding: 10px;
+  }
+  
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .boton_nav{
+    border: 2px solid white;
+    padding: 5px;
+    margin-bottom: 1%;
+    background-color: dimgrey;
+  }
+
+  .subtitulo{
+    border: 2px solid white;
+    padding: 5px;
+    margin-bottom: 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color:dimgrey;
+  }
+
+  .imagenes{
+    display: flex;
+  }
+
+  #imagen:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1);
+  }
+
+  .imagen{
+      padding: 10px;
+      margin-bottom: 20px;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.logo{
+  height: 150px; /* ajusta este valor según tus necesidades */
+    width: auto; /* mantiene la proporción original */
+    margin-bottom: 2%;
+}
+
+
+.acerca_info{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 1%;
+}
+
+#formulario{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.formulario_cuerpo{
+  padding: 10px;
+}
+
+.info_imagen{
+  background-color: brown;
+  padding: 10px;
+}
+
+.video_inicio{
+  padding: 10px;
+}
+
+#map {
+  width: 50%;
+  height: 600px; /* Ajusta la altura según tus necesidades */
+  padding: 10px;
+  border: 0;
+}
+
+.video_acerca{
+  padding: 10px;
+}
+
+.subtitulo_header{
+  border: 2px solid white; /* Grosor y color del borde */
+  padding: 10px; /* Añade espacio interno para que el texto no esté pegado al borde */
+
+}
+
+.video_inicio {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  padding: 0;
+}
+
+.titulo_header{
+  padding: 10px;
+}
+
+#video_inicio {
+  position: relative; /* Establece una posición relativa para el contenedor */
+}
+
+.texto_video {
+  position: absolute; /* Establece una posición absoluta para el texto */
+  top: 50%; /* Alinea el texto en la mitad superior del contenedor */
+  left: 50%; /* Centra el texto horizontalmente */
+  transform: translate(-50%, -50%); /* Centra el texto correctamente */
+  color: white; /* Color del texto */
+  background-color: brown;
+  font-size: 400%; /* Tamaño del texto */
+  font-family:Verdana, Geneva, Tahoma, sans-serif; /* Tipo de letra del texto */
+  text-align: center; /* Alinea el texto al centro */
+  font-style:italic;
+  padding: 2%;
+}
+
+.body{
+  padding: 18px;
+}
+
+.preguntas{
+  font-style: italic;
+}
