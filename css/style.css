@@ -10,6 +10,12 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
 
+  nav{
+    border: 2px solid #e51b23;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+
   .eslogan {
     margin-bottom: 50px;
     font-style: italic;
@@ -29,10 +35,12 @@
   a{
     color: #e51b23;
     text-decoration: none;
+    display: inline-block;
   }
 
-  a:hover {
-    color: white;
+  nav a:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1);
   }
 
   .titulo_header a:hover{
@@ -40,16 +48,8 @@
   }
 
   .boton_nav{
-    border: 2px solid #e51b23;
-    border-radius: 20px;
     padding: 5px;
     margin-bottom: 1%;
-  }
-
-  .boton_nav:hover{
-    color: white;
-    background-color: #e51b23;
-    border: 2px solid #e51b23;
   }
 
   .subtitulo{
