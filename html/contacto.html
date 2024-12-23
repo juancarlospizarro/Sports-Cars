@@ -24,24 +24,27 @@
             <form id="formulario" method="post" action="/">
                 <fieldset>
                     <legend>Información Personal</legend>
-                    <div class="formulario_cuerpo">
-                        <label style="display: block" >Nombre: <input type="text" name="name" required></label>
+                    <div class="formulario_datos">
+                        <div class="formulario_cuerpo">
+                            <label style="display: block" >Nombre: <input type="text" name="name" required></label>
+                        </div>
+                        
+                        <div class="formulario_cuerpo">
+                            <label style="display: block" >Apellidos: <input type="text" name="surname"></label>
+                        </div>
+                        <div class="formulario_cuerpo">
+                            <label style="display: block" >Email: <input type="email" name="email" required></label>
+                        </div>
+        
+                        <div class="formulario_cuerpo">
+                            <label style="display: block" >Asunto: <input type="text" name="subject" required></label>
+                        </div>
+        
+                        <div class="formulario_cuerpo">
+                            <input type="submit" value="Enviar formulario">
+                        </div>       
                     </div>
                     
-                    <div class="formulario_cuerpo">
-                        <label style="display: block" >Apellidos: <input type="text" name="surname"></label>
-                    </div>
-                    <div class="formulario_cuerpo">
-                        <label style="display: block" >Email: <input type="email" name="email" required></label>
-                    </div>
-    
-                    <div class="formulario_cuerpo">
-                        <label style="display: block" >Asunto: <input type="text" name="subject" required></label>
-                    </div>
-    
-                    <div class="formulario_cuerpo">
-                        <button type="submit">Enviar formulario
-                    </div>       
                 </fieldset>
             </form>
         </section>
@@ -50,8 +53,13 @@
             <h2 class="subtitulo">UBICACIÓN</h2>        
         </div>
     
-        <div style="text-align: center;">
-            <iframe id="map" src="https://www.google.com/maps/d/u/0/embed?mid=1NF46OCN5Xs9fvH93zdNztetYCSCqD1M&ehbc=2E312F"></iframe>
+        <div id="mapa">
+            <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-6.129684448242188%2C37.27787748952485%2C-5.808334350585938%2C37.47513055241361&amp;layer=mapnik">
+            </iframe>
+            <br/>
+            <small>
+                <a href="https://www.openstreetmap.org/#map=12/37.3766/-5.9690">Ver el mapa más grande</a>
+            </small>
         </div>
 
     </div>
