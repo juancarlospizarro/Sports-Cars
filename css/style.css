@@ -237,7 +237,6 @@ hr{
     align-items: center; /* Centra los elementos verticales */
     list-style-type: none;
     display: flex; /* Hace que los elementos se muestren en línea (horizontalmente) */
-    gap: 15px;
   }
 
   header{
@@ -306,7 +305,6 @@ hr{
 
   footer {
     font-size: 0.8rem; /* Ajusta el tamaño de la fuente del footer */
-    text-align: center;
   }
 
   body{
