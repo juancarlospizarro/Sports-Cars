@@ -3,11 +3,13 @@
     display: flex; /* Hace que los elementos se muestren en línea (horizontalmente) */
     justify-content: space-around; /* Distribuye uniformemente los elementos a lo largo de la barra de navegación */
     margin-top: 30px;
+    gap: 15px;
   }
 
   header{
     color: black;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
   }
 
   nav{
@@ -85,7 +87,7 @@
 
 .imagen img {
   width: 100%;
-  height: 300px;
+  height: auto;
 }
 
 .logo{
@@ -96,6 +98,10 @@
     border-radius: 20px;
 }
 
+#vehicle-container img{
+  width: 100%;
+  height: auto;
+}
 
 .acerca_info{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -155,6 +161,11 @@
   padding: 10px;
 }
 
+.video_acerca iframe{
+  width: 560px;
+  height: 315px;
+}
+
 .subtitulo_header{
   border: 2px solid white; /* Grosor y color del borde */
   padding: 10px; /* Añade espacio interno para que el texto no esté pegado al borde */
@@ -184,17 +195,18 @@
   transform: translate(-50%, -50%); /* Centra el texto correctamente */
   color: white; /* Color del texto */
   background-color: #e51b23;
-  font-size: 400%; /* Tamaño del texto */
+  font-size: 2rem; /* Tamaño del texto */
   font-family:Verdana, Geneva, Tahoma, sans-serif; /* Tipo de letra del texto */
   text-align: center; /* Alinea el texto al centro */
   font-style:italic;
-  padding: 2%;
+  padding: 5%;
   width: 70%;
   height: auto;
 }
 
 .body{
   padding: 18px;
+  font-size: 16px;
 }
 
 .preguntas{
@@ -204,6 +216,7 @@
 footer{
   border: 2px solid transparent;
   border-bottom-right-radius: 20px;
+  padding: 10px;
 }
 
 footer a{
@@ -216,3 +229,93 @@ hr{
 
 
 /* Responsive */
+
+@media (max-width: 768px) {
+  /* Ajustes para tablets y pantallas medianas */
+  .barra_nav {
+    flex-direction: column; /* Cambia la disposición a vertical */
+    align-items: center; /* Centra los elementos verticales */
+    list-style-type: none;
+    display: flex; /* Hace que los elementos se muestren en línea (horizontalmente) */
+    gap: 15px;
+  }
+
+  header{
+    font-size: 14px;
+  }
+
+  .imagenes {
+    flex-direction: column; /* Acomoda las imágenes en una columna */
+    gap: 20px; /* Aumenta el espacio entre las imágenes */
+  }
+
+  #vehicle-container img{
+    width: 100%;
+    height: auto;
+  }
+
+  #mapa iframe {
+    width: 100%; /* Asegura que el mapa se ajuste al ancho del contenedor */
+  }
+
+  .texto_video {
+    font-size: 200%; /* Reduce el tamaño del texto */
+    width: 90%; /* Ajusta el ancho */
+  }
+
+  body{
+    font-size: 14px;
+  }
+
+  .video_acerca{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes para móviles pequeños */
+  .barra_nav {
+    flex-direction: column;
+    gap: 10px; /* Espaciado entre elementos */
+  }
+
+  header{
+    font-size: 12px;
+  }
+
+  .imagenes img {
+    height: auto; /* Asegura que las imágenes mantengan su proporción */
+  }
+
+  #vehicle-container img{
+    width: 100%;
+    height: auto;
+  }
+
+  .subtitulo_header {
+    font-size: 1rem; /* Reduce el tamaño del texto */
+    padding: 5px; /* Ajusta el espacio interno */
+  }
+
+  .texto_video {
+    font-size: 150%; /* Tamaño de texto más pequeño */
+    padding: 5%; /* Reduce los márgenes internos */
+  }
+
+  footer {
+    font-size: 0.8rem; /* Ajusta el tamaño de la fuente del footer */
+    text-align: center;
+  }
+
+  body{
+    font-size: 12px;
+  }
+
+  .video_acerca{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+  }
+}
